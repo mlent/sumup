@@ -1,0 +1,4 @@
+sumup
+=====
+
+Coding task.
