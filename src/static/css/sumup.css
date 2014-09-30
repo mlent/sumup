@@ -12,6 +12,7 @@ a:hover {
 h1 {
 	font-size: 24px;
 	color: #DDD;
+	margin-bottom: 20px;
 }
 #feed {
 	max-width: 700px;

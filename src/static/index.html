@@ -14,7 +14,7 @@
 	<!-- CSS -->
     <link rel="stylesheet" href="../../bower_components/foundation/css/foundation.css" />
 	<link rel="stylesheet" href="css/sumup.css">
-    <script src="../../bower_components/foundation/js/modernizr.js"></script>
+    <script src="../../bower_components/modernizr/modernizr.js"></script>
 
  </head>
  <body>
@@ -22,16 +22,16 @@
 		<div class="row header">
 			<div class="large-12">
 				<img src="images/sumup_logo.png">
-				<h1><a href="#">#sumup</a> on Twitter</h1>
+				<h1><a href="https://twitter.com/search?q=%23sumup">#sumup</a> on Twitter</h1>
 				<input type="text" ng-model="searchText" placeholder="Filter Tweets">
 			</div>
 		</div>
 
 		<div ng-repeat="tweet in tweets | filter:searchText" class="tweet row">
 			<div class="twitter-status large-12 medium-12 columns">
-				<img src="{{ tweet.user_profile_image }}">
+				<img ng-src="{{ tweet.user_profile_image }}">
 				<a href="#">{{ tweet.name }} <small>@{{ tweet.user }}</small></a>
-				<p>{{ tweet | parseTweet }}</p>
+				<p ng-bind-html="tweet | parseTweet"></p>
 			</div>
 		</div>
 	</div>

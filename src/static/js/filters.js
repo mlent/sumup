@@ -28,7 +28,7 @@ angular.module('tweetFilter', []).filter('parseTweet', function($sce) {
 
 			var parse = j[1];
 			if (i > pos) parsed += input.tweet.substring(pos, i);
-			parsed += parse(input.tweet.substring(i, j[0]));
+			parsed += ' ' + parse(input.tweet.substring(i, j[0]));
 			i = j[0] - 1;
 			pos = j[1];
 		}
