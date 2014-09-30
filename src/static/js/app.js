@@ -1,1 +1,1 @@
-var app = angular.module('TwitterFeed', []);
+var app = angular.module('TwitterFeed', ['tweetFilter', 'ngSanitize']);

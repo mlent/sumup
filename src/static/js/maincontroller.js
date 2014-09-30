@@ -5,4 +5,5 @@ app.controller("TweetController", function($scope, $http) {
 	}).success(function(data) {
 		$scope.tweets = data.data;
 	})
+
 });

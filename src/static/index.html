@@ -5,9 +5,11 @@
      <title>Learning AngularJS</title>
 
 	 <!-- JS -->
-	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js" type="text/javascript"></script>
+	 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
+	 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-sanitize.js" type="text/javascript"></script>
 	 <script src="js/app.js" type="text/javascript"></script>
 	 <script src="js/maincontroller.js" type="text/javascript"></script>
+	 <script src="js/filters.js" type="text/javascript"></script>
 
 	<!-- CSS -->
     <link rel="stylesheet" href="../../bower_components/foundation/css/foundation.css" />
@@ -29,7 +31,7 @@
 			<div class="twitter-status large-12 medium-12 columns">
 				<img src="{{ tweet.user_profile_image }}">
 				<a href="#">{{ tweet.name }} <small>@{{ tweet.user }}</small></a>
-				<p>{{ tweet.tweet }}</p>
+				<p>{{ tweet | parseTweet }}</p>
 			</div>
 		</div>
 	</div>

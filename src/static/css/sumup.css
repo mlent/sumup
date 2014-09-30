@@ -11,6 +11,7 @@ a:hover {
 }
 h1 {
 	font-size: 24px;
+	color: #DDD;
 }
 #feed {
 	max-width: 700px;
@@ -27,23 +28,25 @@ h1 {
 }
 .header a:hover {
 	border-bottom-color: #666;
+	color: #36C3CF;
 }
 .tweet {
 	color: #333;
-	border: 1px solid #DDD;
-	margin-bottom: 10px;
+	border: 1px solid #EBEBEB;
+	margin-top: 5px !important;
 	padding: 20px;
-	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.05);
 	transition: background-color 0.1s ease-out;
 }
 .tweet:hover {
-	cursor: pointer;
-	background-color: #EFEFEF;
+	cursor: default;
+	background-color: #F7F7F7;
 	transition: background-color 0.1s ease-in;
 }
 .tweet a small {
 	color: #999 !important;
 	margin-left: 5px;
+	font-size: 12px;
 }
 .twitter-status {
 	padding-left: 60px;
