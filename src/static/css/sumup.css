@@ -1,0 +1,54 @@
+body {
+	padding: 50px;
+}
+a {
+	color: #21ACB8;
+	text-decoration: none;
+}
+a:hover {
+	color: #0A8A96;
+	border-bottom: 1px solid #DDD;
+}
+h1 {
+	font-size: 24px;
+}
+#feed {
+	max-width: 700px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+.header {
+	background-color: #333;
+	padding: 50px 10px 10px 10px;
+	text-align: center;
+	color: #EEE;
+}
+.header a:hover {
+	border-bottom-color: #666;
+}
+.tweet {
+	color: #333;
+	border: 1px solid #DDD;
+	margin-bottom: 10px;
+	padding: 20px;
+	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.1s ease-out;
+}
+.tweet:hover {
+	cursor: pointer;
+	background-color: #EFEFEF;
+	transition: background-color 0.1s ease-in;
+}
+.tweet a small {
+	color: #999 !important;
+	margin-left: 5px;
+}
+.twitter-status {
+	padding-left: 60px;
+}
+.twitter-status img {
+	margin-left: -65px;
+	float: left;
+}

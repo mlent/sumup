@@ -1,0 +1,23 @@
+{
+  "name": "sumup",
+  "version": "0.0.0",
+  "description": "Interview task for Sumup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlent/sumup.git"
+  },
+  "author": "Monica <lent.monica@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlent/sumup/issues"
+  },
+  "homepage": "https://github.com/mlent/sumup",
+  "devDependencies": {
+    "angular": "^1.2.23",
+    "angularjs": "0.0.1"
+  }
+}
